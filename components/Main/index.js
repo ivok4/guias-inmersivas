@@ -6,13 +6,6 @@ import {MainContainer} from './styled'
 import {SideContainer} from './styled'
 
 
-//const fotoTierra = require('../../assets/planeta.png');
-
-//import fotoTwitter from '../../assets/twitter.png'
-//import fotoYoutube from '../../assets/youtube.png'
-//import fotoInstagram from '../../assets/instagram.png'
-
-
 
 const Main = () => {
 
@@ -27,13 +20,12 @@ const Main = () => {
                 
             </MainContainer>
             <SideContainer>
-                {/* <img src={fotoTierra} alt="Imagen del planeta Tierra"></img>
+                <img src="/assets/planeta.png" alt="Imagen del planeta Tierra"></img>
                 <div>
-                    <img src={fotoTwitter} alt="Logo Twitter"></img>
-                    <img src={fotoYoutube} alt="Logo Youtube"></img>
-                    <img src={fotoInstagram} alt="Logo Instagram"></img>                  
-                
-                </div>*/}
+                    <img src="/assets/planeta.png" alt="Logo Twitter"></img>
+                    <img src="/assets/planeta.png" alt="Logo Youtube"></img>
+                    <img src="/assets/planeta.png" alt="Logo Instagram"></img>                  
+                </div>
             </SideContainer>
         </Container>
         
