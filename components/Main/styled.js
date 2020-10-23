@@ -5,7 +5,7 @@ const Container = styled.div`
     display:grid;
     background-color: #000000;
     grid-template-columns: repeat(1, 3fr);
-    height: 90%;
+    height: 100%;
     @media (min-width: 1024px) {
     display:flex;
     height: 100%;
@@ -72,6 +72,7 @@ const SideContainer = styled.div`
     display:grid;
     justify-items:center;
     width:100%;
+    background-color: black;
     img{
         width:60%;
         align-self: center;
@@ -87,7 +88,6 @@ const SideContainer = styled.div`
     @media (min-width: 1024px) {
         margin-top:3%;
         width:50%;
-
     }
 `
 
