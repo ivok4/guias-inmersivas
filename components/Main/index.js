@@ -22,9 +22,9 @@ const Main = () => {
             <SideContainer>
                 <img src="/assets/planeta.png" alt="Imagen del planeta Tierra"></img>
                 <div>
-                    <img src="/assets/planeta.png" alt="Logo Twitter"></img>
-                    <img src="/assets/planeta.png" alt="Logo Youtube"></img>
-                    <img src="/assets/planeta.png" alt="Logo Instagram"></img>                  
+                    <img src="/assets/twitter.png" alt="Logo Twitter"></img>
+                    <img src="/assets/youtube.png" alt="Logo Youtube"></img>
+                    <img src="/assets/instagram.png" alt="Logo Instagram"></img>                  
                 </div>
             </SideContainer>
         </Container>
