@@ -5,7 +5,7 @@ const Container = styled.nav`
     align-items:center;
     justify-content:center;
     width:100%;
-    height:10%;
+    height:100%;
     margin:0 auto;
     padding:0;
     background-color: #000000;
