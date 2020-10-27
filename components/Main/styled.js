@@ -5,22 +5,22 @@ const Container = styled.div`
     display:grid;
     background-color: #000000;
     grid-template-columns: repeat(1, 3fr);
-    height: 100%;
+    height: 90%;
     @media (min-width: 1024px) {
     display:flex;
-    height: 100%;
+    height: 80%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;   
     } 
     @media (min-width: 1920px) {
-        height: 1000px;
+        height: 80%;
     }
    
 `
 const MainContainer = styled.div`
     width:100%;
-    height:100%;
+    height:90%;
     margin-top:7%;
     display:grid;
     grid-template-columns: repeat(1, 3fr);
@@ -60,6 +60,7 @@ const MainContainer = styled.div`
         text-decoration: none;
             }
         }
+        
     }
     @media(min-width: 1112px) {
         width:50%;

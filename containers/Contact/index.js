@@ -7,7 +7,7 @@ import {Container,
 
 
 
-const LoginContainer = () => {
+const ContactContainer = () => {
 
     return(
         <Container>  
@@ -40,4 +40,4 @@ const LoginContainer = () => {
     )
 }
 
-export default LoginContainer
+export default ContactContainer

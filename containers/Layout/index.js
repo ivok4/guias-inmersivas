@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Navbar } from '../../components';
+import { Navbar, Footer } from '../../components';
 import { ContainerBody } from './styles';
 
 function Layout({ children }) {
@@ -9,7 +9,7 @@ function Layout({ children }) {
     <ContainerBody>
       <Navbar />
       {children}
-      {/* <Footer isHome={isHome} /> */}
+       <Footer />
     </ContainerBody>
   );
 }
