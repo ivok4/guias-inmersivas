@@ -59,17 +59,15 @@ const MainContainer = styled.div`
         color: #FFF;
         text-decoration: none;
             }
-        }
-        
+        } 
     }
     @media(min-width: 1112px) {
         width:50%;
-
     }
 `
 const SideContainer = styled.div`
     margin-top:10%;
-    margin-bottom:10%;
+    margin-bottom:5%;
     display:grid;
     justify-items:center;
     width:100%;
@@ -83,7 +81,7 @@ const SideContainer = styled.div`
         display:flex;
         justify-content:space-around;
         img{
-            width:10%;
+            width:70%;
         }
     }
     @media (min-width: 1024px) {

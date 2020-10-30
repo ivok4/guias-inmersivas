@@ -20,38 +20,44 @@ export const Container = styled.div`
     }
 `
 export const MainContainer = styled.div`
-    width:100%;
-    height:100%;
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    height:80%;
     margin-top:7%;
-    display:grid;
-    grid-template-columns: repeat(1, 3fr);
     justify-items:center;
+    background-color:#FFF;
+    border-radius:0 20px 20px 0;
+    align-items:center;
+    background: url("/assets/fondo-planeta.png");
     p{
         color:#FFF;
+        font-family: 'Blanco Regular';
+        font-size:48px;
     }
     @media(min-width: 468px) {
     }
       
     @media(min-width: 1024px) {
     width:30%;
-    height:700px;
     display:grid;
     grid-template-columns: repeat(1, 3fr);
     justify-content:space-between;
     }
     @media(min-width: 1112px) {
-        height:500px;
         border-radius:20px 0 0 20px;
     }
 `
 export const SideContainer = styled.div`
-width:100%;
-height:100%;
+display:flex;
+flex-direction:column;
+width:30%;
+height:80%;
 margin-top:7%;
-display:grid;
-grid-template-columns: repeat(1, 3fr);
 justify-items:center;
 background-color:#FFF;
+border-radius:0 20px 20px 0;
+align-items:center;
 button{
     background-color: #FF6A00;
     width: 50%;
@@ -64,88 +70,52 @@ button{
         text-decoration: none;
         }
     }
+    h1{
+      height:fit-content;
+      width:52%;
+    }
 @media(min-width: 468px) {
 }
   
 @media(min-width: 1024px) {
-width:30%;
-height:70px;
-display:grid;
-grid-template-columns: repeat(1, 3fr);
-justify-content:space-between;
+
 }
 @media(min-width: 1112px) {
-    height:500px;
-    border-radius:0 20px 20px 0;
 }
 `
-
-
-export const ImagenLogin = styled.img`
-  width: 15%;
-`;
-
-export const Intro = styled.p`
-  width: 100%;
-  color: violet;
-  line-height: 30px;
-  font-family: 'Proxima Nova';
-`;
 
 export const FormLogin = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
+  height:100%;
   padding: 20px 0;
+  div{
+    display:inline;
+    width:80%;
+    border-bottom: 0.5px solid #000;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:5%;
+    img{
+      width:10%;
+      height: 60%;
+      margin-right:5%;
+    }
+  }
   input {
-    width: 100%;
+    width: 70%;
     background: none;
     border: none;
-    border-bottom: 1px solid violet;
-    padding: 15px 0px;
+    padding: 15px 10px;
     margin: 5px 0px;
   }
   input::placeholder {
-    color:violet;
+    color:#000;
+    font-weight:bold;
+    font-size:20px;
   }
  
 `;
-
-export const Olvidaste = styled.a`
-  width: 100%;
-  color: violet;
-  padding: 20px 0px;
-  font-family: 'Proxima Nova';
-  font-weight: bold;
- 
-`;
-
-export const IniciarSesion = styled.button`
-  cursor:pointer;
-  width: 100%;
-  background-color: orange;
-  color: violet;
-  border-radius: 50px;
-  padding: 10px 0px;
-  border: none;
-  text-transform: uppercase;
-  font-family: 'Proxima Nova';
-  font-weight: bold;
-  margin: 20px 0px;
- 
-`;
-
-export const SolicitarCuenta = styled.button`
-  cursor: pointer;
-  width: 100%;
-  background-color: #F5F5F5;
-  color: violet;
-  border-radius: 50px;
-  padding: 10px 0;
-  border: none;
-  text-transform: uppercase;
-  font-family: 'Proxima Nova';
-  font-weight: bold;  
-`;
-

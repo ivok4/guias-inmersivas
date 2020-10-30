@@ -16,22 +16,28 @@ const LoginContainer = () => {
             <p>Guías inmersivas</p>
           </MainContainer>
           <SideContainer>
-            <h1>INICIAR SESION</h1>
+            <h1>Iniciar sesion</h1>
             <FormLogin>
-              <input
-                className="input"
-                name="email"
-                type="text"
-                placeholder="Usuario"
-              />
-              <input
-                className="input"
-                name="password"
-                type="text"
-                placeholder="Contraseña"
-              />
+              <div>
+                <img src="/assets/usuario.svg" alt="Logo usuario"></img>
+                <input
+                  className="input"
+                  name="email"
+                  type="text"
+                  placeholder="Usuario"
+                />
+              </div>
+              <div>
+                <img src="/assets/usuario.svg" alt="Logo usuario"></img>
+                <input
+                  className="input"
+                  name="email"
+                  type="text"
+                  placeholder="Contraseña"
+                />
+              </div>
             <button>
-              <a href="../../assets/instagram.apk" download> Descargar apk</a>
+              <a href="#"> INICIAR SESION</a>
             </button>            
             </FormLogin>
           </SideContainer>

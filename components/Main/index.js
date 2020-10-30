@@ -22,9 +22,15 @@ const Main = () => {
             <SideContainer>
                 <img src="/assets/planeta.png" alt="Imagen del planeta Tierra"></img>
                 <div>
-                    <img src="/assets/twitter.png" alt="Logo Twitter"></img>
-                    <img src="/assets/youtube.png" alt="Logo Youtube"></img>
-                    <img src="/assets/instagram.png" alt="Logo Instagram"></img>                  
+                    <a href="https://twitter.com/GInmersivas" target="_blank">
+                        <img src="/assets/twitter.png" alt="Logo Twitter"></img>
+                    </a>
+                    <a href="https://twitter.com/GInmersivas" target="_blank">
+                        <img src="/assets/instagram.png" alt="Logo Twitter"></img>
+                    </a>
+                    <a href="https://twitter.com/GInmersivas" target="_blank">
+                        <img src="/assets/youtube.png" alt="Logo Twitter"></img>
+                    </a>
                 </div>
             </SideContainer>
         </Container>
