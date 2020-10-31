@@ -8,7 +8,7 @@ const Footer = () => {
         <Container>
             <p>Derechos reservados</p>
             <p>Proyecto realizado por <a href="#">Ivo Krivzov</a></p>
-            <a href="./">Contacto</a>
+            <a href="./contact">Contacto</a>
         </Container>
     )
 }

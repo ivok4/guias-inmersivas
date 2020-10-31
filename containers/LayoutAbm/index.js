@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Navbar, Footer } from '../../components';
+import { NavbarAbm } from '../../components';
 import { ContainerBody } from './styled';
 
 function Layout({ children }) {
   return (
     <ContainerBody>
-      <Navbar />
+      <NavbarAbm />
       {children}
-       <Footer />
     </ContainerBody>
   );
 }

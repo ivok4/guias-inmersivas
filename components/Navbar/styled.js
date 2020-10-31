@@ -15,7 +15,7 @@ const Container = styled.nav`
         justify-content:center;
     }
     img{
-        width: 50%;
+        width: 100%;
     }
 @media (min-width: 1024px) {
     h1{
@@ -24,7 +24,7 @@ const Container = styled.nav`
         justify-content:center;
     }
     img{
-        width: 15%;
+        width: 100%;
     }
 }
 `
