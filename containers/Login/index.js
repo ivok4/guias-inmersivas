@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import fire from '../../lib/fire';
 import {Container,
   MainContainer,
   SideContainer,
