@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import fire from '../../lib/fire';
 import {Container,
   MainContainer,
   SideContainer,
   FormLogin
 } from './styled'
 
-
-
-const LoginContainer = () => {
-
+const LoginContainer = (props) => {
+  const { email,
+  setEmail,
+  password,
+  setPassword,
+  handleLogin,
+  hasAccount,
+  setHasAccount,
+  emailError,
+  passwordError,
+  } = props;
     return(
         <Container>  
           <MainContainer>
@@ -25,7 +33,11 @@ const LoginContainer = () => {
                   name="email"
                   type="text"
                   placeholder="Usuario"
+                  id="email"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
                 />
+                <p>{emailError}</p>
               </div>
               <div>
                 <img src="/assets/usuario.svg" alt="Logo usuario"></img>
@@ -34,9 +46,14 @@ const LoginContainer = () => {
                   name="email"
                   type="text"
                   placeholder="Contraseña"
+                  id="password"
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
+
                 />
+                  <p>{passwordError}</p>
               </div>
-            <button>
+            <button onClick={handleLogin}>
               <a href="#"> INICIAR SESION</a>
             </button>            
             </FormLogin>
@@ -45,5 +62,6 @@ const LoginContainer = () => {
         
     )
 }
+
 
 export default LoginContainer

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container} from './styled'
 
-const NavbarAbm = () => {
+const NavbarAbm = ({handleLogout}) => {
 
     return(
 
@@ -11,7 +11,7 @@ const NavbarAbm = () => {
                 <img src="/assets/LogoNegro.svg" alt="Logo guias inmersivas" />
                 </a>
             </h1>
-            <p><a href="#">CERRAR SESION</a></p>
+            <button onClick={handleLogout}>CERRAR SESION</button>
         </Container>
     )
 }

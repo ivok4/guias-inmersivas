@@ -16,7 +16,6 @@ const AbmContainer = () => {
             <p><a href="#">Guías</a></p>
             <p><a href="#">Guías</a></p>
             <p><a href="#">Guías</a></p>
-            
           </Sidebar>
           <Grid>
             <div className="titulo">
