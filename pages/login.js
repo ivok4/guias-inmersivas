@@ -2,6 +2,7 @@ import {Layout, Login as LoginContainer} from '../containers'
 import {LayoutAbm, Abm as AbmContainer} from '../containers'
 import React, { useState, useEffect } from "react";
 import fire from '../lib/fire';
+import 'firebase/<PACKAGE>';
 
 export default function Login({data}) {
   const [user, setUser] = useState('');
