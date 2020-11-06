@@ -48,7 +48,6 @@ const LoginContainer = (props) => {
                   id="password"
                   value={password}
                   onChange={e => setPassword(e.target.value)}
-
                 />
                   <p>{passwordError}</p>
               </div>
