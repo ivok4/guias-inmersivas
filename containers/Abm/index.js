@@ -28,9 +28,6 @@ const AbmContainer = ({data}) => {
         <Container>  
           <Sidebar>
             <h1>Panel de control</h1>
-            { places.map(place => 
-            <p><a href="#">{name}</a></p>
-            )}
             <p><a href="#">Guías</a></p>
             <p><a href="#">Guías</a></p>
             <p><a href="#">Guías</a></p>

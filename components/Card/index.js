@@ -11,11 +11,10 @@ const Card = ({data}) =>{
 
     return(
         <>
-       
                 { animals.map(animal => 
-                <Container>
-                    <div className="info">
-                    <h2>{animal.animalName}</h2>
+                <Container>                    
+                    <div className="info" >
+                    <h2 id={`${animal.name}`}>{animal.animalName}</h2>
                     <hr></hr>
                     <p>{animal.description}</p>
                     <hr></hr>

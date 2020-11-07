@@ -3,7 +3,7 @@ import {LayoutAbm, Abm as AbmContainer} from '../containers'
 import React, { useState, useEffect } from "react";
 import firebase from '../lib/fire';
 
-export default function Login({data}) {
+export default function Login({}) {
   const [user, setUser] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
