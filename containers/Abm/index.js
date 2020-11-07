@@ -1,18 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import {Container,
   Grid,
   Sidebar
 } from './styled'
 import { Card } from '../../components';
+import axios from 'axios'
 
 
 
-const AbmContainer = () => {
+const AbmContainer = ({data}) => {
+  const [places, setPlaces] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const { data } = await axios.get(
+                    "/api/places"
+                );
+                setPlaces(data);
+            } catch (error) {
+                console.error("este es mi error", error);
+            }
+        };
+        fetchData();
+    }, []);
 
     return(
         <Container>  
           <Sidebar>
             <h1>Panel de control</h1>
+            { places.map(place => 
+            <p><a href="#">{name}</a></p>
+            )}
             <p><a href="#">Guías</a></p>
             <p><a href="#">Guías</a></p>
             <p><a href="#">Guías</a></p>
@@ -27,10 +45,7 @@ const AbmContainer = () => {
                   Crear carta
                 </button>
             </div>
-            <Card />
-            <Card />
-            <Card />
-            <Card /> 
+            { places.map(place => <Card key={place.id} data={place} />)} 
           </Grid>
         </Container>
         

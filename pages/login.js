@@ -1,7 +1,7 @@
 import {Layout, Login as LoginContainer} from '../containers'
 import {LayoutAbm, Abm as AbmContainer} from '../containers'
 import React, { useState, useEffect } from "react";
-import fire from '../lib/fire';
+import firebase from '../lib/fire';
 
 export default function Login({data}) {
   const [user, setUser] = useState('');
@@ -22,7 +22,7 @@ const clearErrors = () =>{
 }
   const handleLogin = () =>{
     clearErrors();
-    fire
+    firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
       .catch(err => {
@@ -39,10 +39,10 @@ const clearErrors = () =>{
       })
   }
   const handleLogout = () =>{
-    fire.auth().signOut();
+    firebase.auth().signOut();
   }
   const authListener = () =>{
-    fire.auth().onAuthStateChanged(user => {
+    firebase.auth().onAuthStateChanged(user => {
       if(user){
         clearInputs();
         setUser(user);

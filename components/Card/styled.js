@@ -5,6 +5,7 @@ export const Container = styled.div`
     color: #000;
     background-color: #FFF;
     width:90%;
+    min-height:90%;
     margin:2%;
     padding:5%;
     box-shadow: 10px 5px 8px 5px #888888; 
@@ -20,6 +21,7 @@ export const Container = styled.div`
     height: 40px;
     border-style:none;
     color:#FFF;
+    align-self: auto;
     }
     .eliminar{
     background-color: #FFF;
@@ -39,13 +41,7 @@ h2{
     display:block;
     color:#CCCCCC;
     font-family: 'Comic Neue Regular';
+    height:50%;
 }
 
-`
-export const GuardarButton = styled.button`
-  background-color: #FF6A00;
-    width: 30%;
-    height: 40px;
-    border-style:none;
-    color:#FFF;
 `

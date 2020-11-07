@@ -10,7 +10,7 @@ export const Grid = styled.div`
     display:grid;
     background-color: #F3F7FA;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 15% 40% 40%;
+    grid-template-rows: 12% 30% 30%;
     width:100%;
     padding: 0 2%;
     .titulo{
