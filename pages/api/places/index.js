@@ -1,5 +1,4 @@
 import fire from '../../../lib/fire';
-//import 'firebase/<PACKAGE>';
 const firebaseDB = fire.database();
 
 export default async (req, res) => {

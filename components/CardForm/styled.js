@@ -31,18 +31,17 @@ export const Container = styled.div`
     color:#CCC;
     border: 2px solid #CCC;
     }
-    .name{
+}
+h2{
     display:inline-flex;
     color:#000;
     font-family: 'Blanco Regular';
 }
-.description{
+.info, p{
     display:block;
     color:#CCCCCC;
     font-family: 'Comic Neue Regular';
     height:50%;
 }
-}
-
 
 `

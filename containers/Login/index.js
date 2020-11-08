@@ -11,8 +11,6 @@ const LoginContainer = (props) => {
   password,
   setPassword,
   handleLogin,
-  hasAccount,
-  setHasAccount,
   emailError,
   passwordError,
   } = props;
