@@ -42,7 +42,7 @@ const AbmContainer = ({data}) => {
                   Crear carta
                 </button>
             </div>
-            { places.map(place => <Card key={place.id} enableEdit={false} data={place} />)} 
+            { places.map(place => <Card key={place.id} enableEdit={false} data={place}/>)} 
           </Grid>
         </Container>
         

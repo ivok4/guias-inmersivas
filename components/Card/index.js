@@ -1,41 +1,56 @@
 import { Container } from './styled'
 import React, { useState } from 'react';
 import axios from 'axios';
+import firebase from '../../lib/fire';
 
 
 const Card = ({data}) =>{  
     const {
         id,
-        name,
         animals
       } = data;
 
       const [contentEditable, setcontentEditable] = useState('false');
       const [nombre, setNombre] = useState('');
+      const [descripcion, setdescripcion] = useState('');
+      const desc = "";
+
    
   
       const handleEdit = (animal) =>{
         setcontentEditable('true');
         console.log(animal);
       }
-      const handleChange = (value) =>{
+      const handleChangeName = (value) =>{
         setNombre(value);
         console.log("esto es el nombre: " + value);
-        //onSubmit(value)
+      }
+      const handleChangeDescription = (value) =>{
+        setdescripcion(value);
+        console.log("esto es la descripcion: " + value);
       }
 
-    const onSubmit = () =>{
-        //hacer push
-        console.log(nombre +" array");
+    const onSubmit = (name, animalKey) =>{
+        //hace push
+        console.log(id +" id"); //id del place
+        console.log(nombre + " array"); //nuevo valor       
+       
+      var ref =  firebase.database().ref('places/'+ id + "/animals"); //conecta con la base segun en que "place" se encuentra y dentro de eso busca en animals 
+
+      var blast = ref.child(animalKey); //recibe el valor de iteracion, que es igual al id del "animal" en la base de datos
+         blast.update({ //actualiza la data.
+        "animalName": nombre,
+        "description": descripcion
+        });
     }
-    
-    
+     
+  
     return(
 
         <>
-                { animals.map(animal => 
-                <Container>                    
-                    <div className="info" id={`${animal.animalName}`}>
+                { animals.map((animal,i)  => 
+                <Container> 
+                    <div className="info" id={`${animal.id}`} placeId={id} animalKey={i} >
                     {/* <h2 contentEditable={contentEditable} 
                     id="editor"
                     value={e.currentTarget.textContent}
@@ -46,8 +61,7 @@ const Card = ({data}) =>{
                     className="name"
                         contentEditable={contentEditable}
                         //onInput={e => console.log('Text inside div', e.currentTarget.textContent)}
-                        onInput={e => handleChange(e.currentTarget.textContent)}
-
+                        onInput={e => handleChangeName(e.currentTarget.textContent)}
                         >
                             {animal.animalName}
                         </div>
@@ -56,7 +70,7 @@ const Card = ({data}) =>{
                     className="description"
                         contentEditable={contentEditable}
                         //onInput={e => console.log('Text inside div', e.currentTarget.textContent)}
-                        onInput={e => handleChange(e.currentTarget.textContent)}
+                        onInput={e => handleChangeDescription(e.currentTarget.textContent)}
 
                         >
                             {animal.description}
@@ -65,7 +79,7 @@ const Card = ({data}) =>{
                     <div>
                         <button 
                         className="guardar"
-                        onClick={() => onSubmit()}>GUARDAR</button>
+                        onClick={() => onSubmit(animal, i)}>GUARDAR</button>
                         <button className="eliminar"
                         onClick={() => handleEdit(animal)}>EDITAR</button>
                     </div>
