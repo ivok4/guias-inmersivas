@@ -12,12 +12,13 @@ const Container = styled.nav`
     
     h1{
         width: 100%;
-    }
-    a{
+        a{
         width: 100%;
         display:flex;
         justify-content:center;
     }
+    }
+    
     img{
         width: 40%;
     }
