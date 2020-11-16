@@ -52,7 +52,7 @@ button{
         list-style:none;
         color: #FFF;
         text-decoration: none;
-        }
+        } 
     }
 @media(min-width: 768px) {
   width:50%;
