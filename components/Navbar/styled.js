@@ -9,13 +9,17 @@ const Container = styled.nav`
     margin:0 auto;
     padding:0;
     background-color: #000000;
+    
     h1{
+        width: 100%;
+    }
+    a{
         width: 100%;
         display:flex;
         justify-content:center;
     }
     img{
-        width: 80%;
+        width: 40%;
     }
     @media (min-width: 425px) {
     h1{
@@ -23,6 +27,7 @@ const Container = styled.nav`
         display:flex;
         justify-content:center;
     }
+   
 }
 @media (min-width: 1024px) {
     h1{
@@ -31,7 +36,7 @@ const Container = styled.nav`
         justify-content:center;
     }
     img{
-        width: 100%;
+        width: 20%;
     }
 }
 `
