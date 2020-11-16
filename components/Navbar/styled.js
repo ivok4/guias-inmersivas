@@ -15,8 +15,18 @@ const Container = styled.nav`
         justify-content:center;
     }
     img{
-        width: 100%;
+        width: 80%;
     }
+    @media (min-width: 425px) {
+    h1{
+        width: 100%;
+        display:flex;
+        justify-content:center;
+    }
+    img{
+        width: 80%;
+    }
+}
 @media (min-width: 1024px) {
     h1{
         width: 100%;
