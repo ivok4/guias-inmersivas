@@ -47,7 +47,7 @@ button{
         list-style:none;
         color: #FFF;
         text-decoration: none;
-        }
+        } 
     }
 @media(min-width: 468px) {
 }
