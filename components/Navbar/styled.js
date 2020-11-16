@@ -23,9 +23,6 @@ const Container = styled.nav`
         display:flex;
         justify-content:center;
     }
-    img{
-        width: 80%;
-    }
 }
 @media (min-width: 1024px) {
     h1{
