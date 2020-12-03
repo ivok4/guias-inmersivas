@@ -21,6 +21,7 @@ const [id,setId] = useState('');
 
   const onSubmit = () =>{
     //hace push
+    
   var ref =  firebase.database().ref('places/').push({ //actualiza la data.   
       "name":place,
       animals:[{
@@ -30,12 +31,20 @@ const [id,setId] = useState('');
       }
       ]
     });
-  //   document.getElementById("myButton").onclick = function () {
-  //     location.href = '/abm';
-  // };
-  var url = "http://www.guiasinmersivas.com/abm";
-  window.location.href = (url);
+    resetForm();
 }
+
+  function goTo(){
+    //window.location.href = "/abm";
+    var inputs = document.getElementsByClassName("input"); // 
+    inputs.value('');
+  }
+  function resetForm() {
+    setPlace('');
+    setAnimalName('');
+    setDescription('');
+    setId('');
+  }
     
         return (
           <Container>

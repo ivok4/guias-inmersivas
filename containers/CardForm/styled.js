@@ -82,7 +82,7 @@ align-items:center;
       font-family: 'Comic Neue Regular';
       font-size:20px;
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       min-height:40%;
       ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color:#CCCCCC;
