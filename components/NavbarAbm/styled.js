@@ -24,9 +24,16 @@ export const Container = styled.nav`
         width:10%;
         font-size:12px;
     }
+    button{
+        background-color:#FFF;
+        border-radius:10px;
+        border-color:#FF6A00;
+        height:50%;
+        width:10%;
+    }
 @media (min-width: 1024px) {
     h1{
-        width: 100%;
+        width: 86%;
         display:flex;
         justify-content:space-between;
     }

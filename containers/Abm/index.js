@@ -39,7 +39,7 @@ const AbmContainer = ({data}) => {
                 <p>Todas</p>
               </div>
                 <button>
-                  Crear carta
+                  <a href="./cardForm">Crear carta</a>
                 </button>
             </div>
             { places.map(place => <Card key={place.id} enableEdit={false} data={place}/>)} 

@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-.info{
-    color: #000;
-    background-color: #FFF;
-    width:90%;
-    min-height:90%;
-    margin:2%;
-    padding:5%;
-    box-shadow: 10px 5px 8px 5px #888888; 
+    .info{
+        color: #000;
+        background-color: #FFF;
+        width:90%;
+        min-height:90%;
+        margin:2%;
+        padding:5%;
+        box-shadow: 10px 5px 8px 5px #888888; 
     div{
         width:100%;
         display:flex;

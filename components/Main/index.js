@@ -25,11 +25,11 @@ const Main = () => {
                     <a href="https://twitter.com/GInmersivas" target="_blank">
                         <img src="/assets/twitter.png" alt="Logo Twitter"></img>
                     </a>
-                    <a href="https://twitter.com/GInmersivas" target="_blank">
-                        <img src="/assets/instagram.png" alt="Logo Twitter"></img>
+                    <a href="https://www.instagram.com/ginmersivas" target="_blank">
+                        <img src="/assets/instagram.png" alt="Logo Instagram"></img>
                     </a>
-                    <a href="https://twitter.com/GInmersivas" target="_blank">
-                        <img src="/assets/youtube.png" alt="Logo Twitter"></img>
+                    <a href="https://www.youtube.com/channel/UCsSpzK1jMftJ_fvmNx0ReAw/featured" target="_blank">
+                        <img src="/assets/youtube.png" alt="Logo Youtube"></img>
                     </a>
                 </div>
             </SideContainer>

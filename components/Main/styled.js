@@ -5,10 +5,11 @@ const Container = styled.div`
     display:grid;
     background-color: #000000;
     grid-template-columns: repeat(1, 3fr);
+    background: url("/assets/Fondo-estrellas.png");
     height: 90%;
     @media (min-width: 1024px) {
     display:flex;
-    height: 80%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;   

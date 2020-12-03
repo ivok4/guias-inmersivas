@@ -2,84 +2,101 @@ import styled from 'styled-components'
 
 
 export const Container = styled.div`
-    display:grid;
-    background-color: #000000;
-    background: url("/assets/Fondo-estrellas.png");
+    display:flex;
+    background-color: #FFF;
     height: 100%;
     width:100%;
+
     @media (min-width: 1024px) {
-    display:flex;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;   
-    justify-content:center;
+  
     } 
     @media (min-width: 1920px) {
     }
 `
 export const SideContainer = styled.div`
-width:100%;
-height:80%;
-margin-top:7%;
+width:40%;
+height:100%;
+background-color:#000;
 display:flex;
 flex-direction:column;
-background-color:#FFF;
-border-radius:20px 20px 20px 20px;
-h1{
-  height:fit-content;
-  margin-left:10%;
-}
-p{
-  height:fit-content;
-  margin-left:10%;
-  color:#B3B3B3;
-}
-button{
-    background-color: #FF6A00;
-    width: 40%;
-    height: 40px;
-    border-radius: 25px;
-    border-style:none;
-    margin-top:20%;
-    align-self:center;
-    a{
-        list-style:none;
-        color: #FFF;
-        text-decoration: none;
-        }
+justify-content:center;
+align-items:center;
+  div{
+    width:70%;
+    height:60%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    img{
+      width:10%;
     }
+    h1{
+    color:#FFF;
+    font-family: 'Blanco Regular';
+    }
+    p{
+    height:fit-content;
+    margin-left:10%;
+    color:#FFF;
+    font-family: 'Comic Neue Regular';
+    }
+  }
+
 @media(min-width: 468px) {
 }
   
 @media(min-width: 1024px) {
-width:30%;
-height:80%;
 }
 @media(min-width: 1112px) {
 }
 `
-
-export const FormLogin = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height:fit-content;
-  padding: 20px 0;
-  input {
-    width: 80%;
-    background-color: #B3B3B3;
-    border: none;
+export const MainContainer = styled.div`
+width:60%;
+height:100%;
+background-color:#FFF;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+  .info{
+    color: #000;
+    background-color: #FFF;
+    width:70%;
+    min-height:70%;
+    margin:2%;
+    padding:5%;
+    box-shadow: 10px 5px 8px 5px #888888; 
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    input {
+    width: 100%;
+    background-color: #FFF;
+    border:none;
+    border-bottom: solid 1px;
     padding: 15px 0px;
     margin: 5px 0px;
-    &:nth-child(2) {
-      min-height:100%;
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #000;
+      font-family: 'Comic Neue Regular';
+      font-size:20px;
     }
+    &:nth-child(3) {
+      min-height:40%;
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:#CCCCCC;
+      }
+    }
+    
   }
- 
-  input::placeholder {
-    color: #000;
-  }
- 
-`;
+    .guardar{
+      background-color: #FF6A00;
+      width: fit-content;
+      height: 40px;
+      border-style:none;
+      color:#FFF;
+      align-self: auto;
+      }
+}
+`
