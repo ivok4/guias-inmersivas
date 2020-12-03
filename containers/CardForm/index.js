@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import firebase from '../../lib/fire';
+import axios from 'axios';
 
 
 import {Container,
   SideContainer,
   MainContainer
 } from './styled'
-import firebase from '../../lib/fire';
 
 
 
@@ -35,9 +36,8 @@ const [id,setId] = useState('');
 }
 
   function goTo(){
-    //window.location.href = "/abm";
-    var inputs = document.getElementsByClassName("input"); // 
-    inputs.value('');
+    window.location.href = "/abm";
+  
   }
   function resetForm() {
     setPlace('');
@@ -54,6 +54,11 @@ const [id,setId] = useState('');
               <h1>Agregar nuevo objeto</h1>
               <p>Podés agregar la información de los objetos que quieras, para luego utilizarla desde la aplicación.</p>
               <p>Es obligatorioingresar ubicación/locación, nombre del objeto y una descripción.</p>
+              <button 
+              onClick={() => goTo()} 
+              >
+                Volver al ABM
+              </button>
              </div>
            </SideContainer>
            <MainContainer>

@@ -41,6 +41,14 @@ align-items:center;
     color:#FFF;
     font-family: 'Comic Neue Regular';
     }
+    button{
+        background-color:#000;
+        color:#FFF;
+        border-radius:10px;
+        border-color:#FF6A00;
+        height:10%;
+        width:30%;
+    }
   }
 
 @media(min-width: 468px) {
