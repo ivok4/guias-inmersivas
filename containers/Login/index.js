@@ -17,7 +17,7 @@ const LoginContainer = (props) => {
     return(
         <Container>  
           <MainContainer>
-          <img src="/assets/Logo.png" alt="Logo Twitter"></img>
+          <img src="/assets/Logo.png" alt="Logo guias inmersivas"></img>
             <p>Guías inmersivas</p>
           </MainContainer>
           <SideContainer>
@@ -37,7 +37,7 @@ const LoginContainer = (props) => {
                 <p>{emailError}</p>
               </div>
               <div>
-                <img src="/assets/usuario.svg" alt="Logo usuario"></img>
+                <img src="/assets/contraseña.svg" alt="Logo contraseña"></img>
                 <input
                   className="input"
                   name="email"
@@ -58,6 +58,4 @@ const LoginContainer = (props) => {
         
     )
 }
-
-
 export default LoginContainer

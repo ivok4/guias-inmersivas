@@ -42,6 +42,7 @@ const Card = ({data}) =>{
         "animalName": nombre,
         "description": descripcion
         });
+        setcontentEditable('false');
     }
      
   
@@ -51,12 +52,7 @@ const Card = ({data}) =>{
                 { animals.map((animal,i)  => 
                 <Container> 
                     <div className="info" id={`${animal.id}`} placeId={id} animalKey={i} >
-                    {/* <h2 contentEditable={contentEditable} 
-                    id="editor"
-                    value={e.currentTarget.textContent}
-                    //onInput={e => console.log('Text inside div', e.currentTarget.textContent)}
-                    onChange={e => handleChange(e.currentTarget.textContent)}
-                    >{animal.animalName}</h2> */}
+                    
                     <div
                     className="name"
                         contentEditable={contentEditable}
