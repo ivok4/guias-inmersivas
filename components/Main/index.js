@@ -7,7 +7,7 @@ import {SideContainer} from './styled'
 
 
 
-const Main = () => {
+const Main = () => { 
 
     return(
         <Container>
