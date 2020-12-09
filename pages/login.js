@@ -60,8 +60,12 @@ const clearErrors = () =>{
   return (
     
     <>
-      {user == null? (
-        <Layout>
+      {user? (
+        <LayoutAbm handleLogout={handleLogout}>
+          <AbmContainer />
+        </LayoutAbm>
+      ): (
+      <Layout>
         <LoginContainer 
           email={email} 
           setEmail={setEmail} 
@@ -74,11 +78,6 @@ const clearErrors = () =>{
           passwordError={passwordError}
           />
         </Layout>
-        
-      ): (
-        <LayoutAbm handleLogout={handleLogout}>
-        <AbmContainer />
-      </LayoutAbm>
       )}
     </>
   )
