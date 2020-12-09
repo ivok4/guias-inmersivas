@@ -3,7 +3,7 @@ import {Container} from './styled'
 import {Title} from './styled'
 import {Paragraph} from './styled'
 import {MainContainer} from './styled'
-import {SideContainer} from './styled'
+import {SideContainer} from './styled' 
 
 
 
