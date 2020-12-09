@@ -1,7 +1,5 @@
 import {Container} from './styled'
 import React, { useState, useEffect } from "react";
-import firebase from '../../lib/fire';
-import { useRouter } from 'next/router'
 
 
 const NavbarAbm = ({handleLogout}) => {

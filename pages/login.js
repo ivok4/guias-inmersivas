@@ -54,12 +54,11 @@ const clearErrors = () =>{
       if(user){
         clearInputs();
         setUser(user);
-        //window.location("./abm");
-        router.push("./abm")
+        //router.push("./abm")
       }
       else{
         setUser('');
-        router.push("./login")
+        //router.push("./login")
       }
     })
   }
@@ -71,11 +70,11 @@ const clearErrors = () =>{
   return (
     
     <>
-      {/* {user ? (
+       {user ? (
         <LayoutAbm handleLogout={handleLogout}>
           <AbmContainer />
         </LayoutAbm>
-      ): ( */}
+      ): ( 
       <Layout>
         <LoginContainer 
           email={email} 
@@ -89,7 +88,7 @@ const clearErrors = () =>{
           passwordError={passwordError}
           />
         </Layout>
-      {/* )} */}
+       )} 
     </>
   )
   

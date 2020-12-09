@@ -8,8 +8,6 @@ export default function Home({data}) {
     <Layout>
       <Main />
     </Layout>
-
-    
   )
   
 }
