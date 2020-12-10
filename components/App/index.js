@@ -44,11 +44,15 @@ const MyComponent = () => {
 };
 
 export default function App() {
+  
   return (
+    
     <ViewportProvider>
+      
       <GlobalFonts />
       <Navbar />
       <Main />
     </ViewportProvider>
   );
+  
 }

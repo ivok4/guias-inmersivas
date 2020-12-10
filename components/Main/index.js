@@ -10,7 +10,9 @@ import {SideContainer} from './styled'
 const Main = () => { 
 
     return(
+        
         <Container>
+       
             <MainContainer>
                 <Title>Guias 360º y con realidad aumentada</Title>   
                 <Paragraph>Guías inmersivas es una aplicación que te permitirá recorrer los lugares mas famosos del mundo con mayor profundidad, aportando tanto vistas 360, como interacción con los distintos paisajes que encontraras en cada lugar. sumado a todo esto obtendrás una experiencia de realidad aumentada para tener un mejor alcance de la flora y fauna de cada paisaje.</Paragraph>

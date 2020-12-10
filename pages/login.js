@@ -2,8 +2,16 @@ import {Layout, Login as LoginContainer} from '../containers'
 import {LayoutAbm, Abm as AbmContainer} from '../containers'
 import React, { useState, useEffect } from "react";
 import firebase from '../lib/fire';
+import { useRouter } from 'next/router'
+
 
 export default function Login({}) {
+//cambio de paginas 
+const router = useRouter()
+
+
+
+
   const [user, setUser] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -46,22 +54,27 @@ const clearErrors = () =>{
       if(user){
         clearInputs();
         setUser(user);
+        //router.push("./abm")
       }
       else{
         setUser('');
+        //router.push("./login")
       }
     })
   }
   useEffect(() => {
     authListener();
   }, [])
+
+  
   return (
+    
     <>
-      {user? (
+       {user ? (
         <LayoutAbm handleLogout={handleLogout}>
           <AbmContainer />
         </LayoutAbm>
-      ): (
+      ): ( 
       <Layout>
         <LoginContainer 
           email={email} 
@@ -75,7 +88,8 @@ const clearErrors = () =>{
           passwordError={passwordError}
           />
         </Layout>
-      )}
+       )} 
     </>
   )
+  
 }
