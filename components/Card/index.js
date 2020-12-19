@@ -19,6 +19,8 @@ const Card = ({data}) =>{
   
       const handleEdit = (animal) =>{
         setcontentEditable('true');
+        setNombre(animal.animalName);
+        setdescripcion(animal.description);
         console.log(animal);
       }
       const handleChangeName = (value) =>{

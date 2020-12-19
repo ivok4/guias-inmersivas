@@ -8,9 +8,6 @@ import {Container,
   MainContainer
 } from './styled'
 
-
-
-
   
 const CardForm = () =>{ 
 const [place,setPlace] = useState('');
@@ -37,7 +34,6 @@ const [id,setId] = useState('');
 
   function goTo(){
     window.location.href = "/abm";
-  
   }
   function resetForm() {
     setPlace('');
