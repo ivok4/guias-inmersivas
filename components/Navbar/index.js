@@ -6,11 +6,12 @@ const Navbar = () => {
     return(
 
         <Container>
-            <h1>
+            <h1> Guias Inmersivas</h1>
+            <h2>
                 <a href="./">
                 <img src="/assets/Logo.svg" alt="Logo guias inmersivas" />
                 </a>
-            </h1>
+            </h2>
         </Container>
     )
 }
