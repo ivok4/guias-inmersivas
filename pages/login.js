@@ -9,9 +9,6 @@ export default function Login({}) {
 //cambio de paginas 
 const router = useRouter()
 
-
-
-
   const [user, setUser] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
