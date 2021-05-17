@@ -5,6 +5,7 @@ import {Container,
 } from './styled'
 import { Card } from '../../components';
 import axios from 'axios'
+import { render } from "react-dom";
 
 
 
@@ -23,8 +24,7 @@ const AbmContainer = ({data}) => {
         };
         fetchData();
     }, []);
-   
-    return(
+      return(
         <Container>  
           <Sidebar>
             <h1>Panel de control</h1>
@@ -47,6 +47,8 @@ const AbmContainer = ({data}) => {
         </Container>
         
     )
-}
+  }
+
+
 
 export default AbmContainer
