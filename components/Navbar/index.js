@@ -9,7 +9,7 @@ const Navbar = () => {
             <h1> Guias Inmersivas</h1>
             <h2>
                 <a href="./">
-                <img src="/assets/Logo.svg" alt="Logo guias inmersivas" />
+                <img src="#" alt="Logo Fantasy basketbal" />
                 </a>
             </h2>
         </Container>

@@ -13,55 +13,16 @@ export const Container = styled.footer`
        color:#CCCCCC;
        font-size:8px;
    }
-   a{
-    color:#FFF;
-    font-size:8px;
-
-   }
    @media (min-width: 425px) {
-    h1{
-        width: 100%;
-        display:flex;
-        justify-content:center;
-    }
-    img{
-        width: 15%;
-    }
     p{
        color:#CCCCCC;
        font-size:12px;
-   }
-   a{
-    color:#FFF;
-    font-size:12px;
-   }
+    }
    }
    @media (min-width: 768px) {
-    h1{
-        width: 100%;
-        display:flex;
-        justify-content:center;
-    }
-    img{
-        width: 15%;
-    }
     p{
        color:#CCCCCC;
        font-size:18px;
-   }
-   a{
-    color:#FFF;
-    font-size:18px;
-   }
-   }
-@media (min-width: 1024px) {
-    h1{
-        width: 100%;
-        display:flex;
-        justify-content:center;
     }
-    img{
-        width: 15%;
-    }
-}
+   }
 `

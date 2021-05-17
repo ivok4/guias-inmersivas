@@ -7,9 +7,7 @@ const Footer = () => {
 
         <Container>
             <p>Derechos reservados</p>
-            <p>Proyecto realizado por <a href="https://www.behance.net/ivokrivzov">Ivo Krivzov</a></p>
-            <a href="./login">Administrador</a>
-            <a href="./contact">Contacto</a>
+            <p>Proyecto realizado por GoldenGoal</p>
         </Container>
     )
 }
